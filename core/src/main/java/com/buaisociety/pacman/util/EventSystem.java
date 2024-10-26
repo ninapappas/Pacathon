@@ -63,8 +63,8 @@ public class EventSystem {
                 //noinspection unchecked
                 ((EventListener<T>) listener).onEvent(event);
             } catch (Exception e) {
-               System.err.println("An error occurred while calling an event listener: " + e.getMessage());
-               e.printStackTrace();
+                System.err.println("An error occurred while calling an event listener: " + e.getMessage());
+                e.printStackTrace();
             }
         }
 
